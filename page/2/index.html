@@ -1,0 +1,2770 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="编程, Python, Qt, C/C++">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="vae的记事本" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2">
+
+
+
+
+
+
+<meta name="description" content="vae的个人博客">
+<meta name="keywords" content="编程,Python,Qt,产品">
+<meta property="og:type" content="website">
+<meta property="og:title" content="vae的记事本">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:site_name" content="vae的记事本">
+<meta property="og:description" content="vae的个人博客">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="vae的记事本">
+<meta name="twitter:description" content="vae的个人博客">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/2/">
+
+
+
+
+
+  <title>vae的记事本</title>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=66099842";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">vae的记事本</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">做一个有趣的产品，取悦自己</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/22/Geopandas 安装 (python中的地理空间数据)/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/22/Geopandas 安装 (python中的地理空间数据)/" itemprop="url">Geopandas 安装 (python中的地理空间数据)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-22T00:00:00+08:00">
+                2017-12-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/12/22/Geopandas 安装 (python中的地理空间数据)/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2017/12/22/Geopandas 安装 (python中的地理空间数据)/" class="cy_cmt_count" data-xid="2017/12/22/Geopandas 安装 (python中的地理空间数据)/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Geopandas 依赖库<br>从  <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs" target="_blank" rel="noopener">http://www.lfd.uci.edu/~gohlke/pythonlibs</a> 下载 Fiona , GDAl , pyproj , Shapely<br>其他包可以通过 pip install geopandas 安装</p>
+<table>
+<thead>
+<tr>
+<th>包</th>
+<th>版本</th>
+<th style="text-align:right">版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fiona</td>
+<td>1.7.6</td>
+<td style="text-align:right">1.7.6</td>
+</tr>
+<tr>
+<td>GDAL</td>
+<td>2.1.3</td>
+<td style="text-align:right">2.1.3</td>
+</tr>
+<tr>
+<td>Shapely</td>
+<td>1.5.17</td>
+<td style="text-align:right">1.5.17</td>
+</tr>
+<tr>
+<td>appdirs</td>
+<td>1.4.3</td>
+<td style="text-align:right">1.4.3</td>
+</tr>
+<tr>
+<td>better-exceptions</td>
+<td>0.1.7</td>
+<td style="text-align:right">0.1.7</td>
+</tr>
+<tr>
+<td>click</td>
+<td>6.7</td>
+<td style="text-align:right">6.7</td>
+</tr>
+<tr>
+<td>click-plugins</td>
+<td>1.0.3</td>
+<td style="text-align:right">1.0.3</td>
+</tr>
+<tr>
+<td>cligj</td>
+<td>0.4.0</td>
+<td style="text-align:right">0.4.0</td>
+</tr>
+<tr>
+<td>colorama</td>
+<td>0.3.9</td>
+<td style="text-align:right">0.3.9</td>
+</tr>
+<tr>
+<td>cycler</td>
+<td>0.10.0</td>
+<td style="text-align:right">0.10.0</td>
+</tr>
+<tr>
+<td>descartes</td>
+<td>1.1.0</td>
+<td style="text-align:right">1.1.0</td>
+</tr>
+<tr>
+<td>geopandas</td>
+<td>0.2.1</td>
+<td style="text-align:right">0.2.1</td>
+</tr>
+<tr>
+<td>matplotlib</td>
+<td>2.0.1</td>
+<td style="text-align:right">2.0.1</td>
+</tr>
+<tr>
+<td>munch</td>
+<td>2.1.1</td>
+<td style="text-align:right">2.1.1</td>
+</tr>
+<tr>
+<td>numpy</td>
+<td>1.12.1</td>
+<td style="text-align:right">1.11.2</td>
+</tr>
+<tr>
+<td>packaging</td>
+<td>16.8</td>
+<td style="text-align:right">16.8</td>
+</tr>
+<tr>
+<td>pandas</td>
+<td>0.19.2</td>
+<td style="text-align:right">0.19.2</td>
+</tr>
+<tr>
+<td>pip</td>
+<td>9.0.1</td>
+<td style="text-align:right">9.0.1</td>
+</tr>
+<tr>
+<td>pyparsing</td>
+<td>2.2.0</td>
+<td style="text-align:right">2.2.0</td>
+</tr>
+<tr>
+<td>pyproj</td>
+<td>1.9.5.1</td>
+<td style="text-align:right">1.9.5.1</td>
+</tr>
+<tr>
+<td>python-dateutil</td>
+<td>2.6.0</td>
+<td style="text-align:right">2.6.0</td>
+</tr>
+<tr>
+<td>pytz</td>
+<td>2017.2</td>
+<td style="text-align:right">2016.10</td>
+</tr>
+<tr>
+<td>setuptools</td>
+<td>35.0.2</td>
+<td style="text-align:right">35.0.2</td>
+</tr>
+<tr>
+<td>six</td>
+<td>1.10.0</td>
+<td style="text-align:right">1.10.0</td>
+</tr>
+</tbody>
+</table>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/22/python os.system os.popen 模块 调用命令行/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/22/python os.system os.popen 模块 调用命令行/" itemprop="url">python os.system os.popen 模块 调用命令行</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-22T00:00:00+08:00">
+                2017-12-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/12/22/python os.system os.popen 模块 调用命令行/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2017/12/22/python os.system os.popen 模块 调用命令行/" class="cy_cmt_count" data-xid="2017/12/22/python os.system os.popen 模块 调用命令行/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">import os </span><br><span class="line">from pprint import pprint  </span><br><span class="line"># 只能执行 不能获取返回信息</span><br><span class="line">os.system(&apos;dir&apos;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 可以获取命令行返回信息 </span><br><span class="line">tmp = os.popen(&apos;dir &apos;).readlines()    </span><br><span class="line">pprint(tmp)</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/22/python查看是32位还是64位版本/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/22/python查看是32位还是64位版本/" itemprop="url">python查看是32位还是64位版本</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-22T00:00:00+08:00">
+                2017-12-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/12/22/python查看是32位还是64位版本/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2017/12/22/python查看是32位还是64位版本/" class="cy_cmt_count" data-xid="2017/12/22/python查看是32位还是64位版本/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> platform</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>platform.architecture()</span><br><span class="line"></span><br><span class="line">(<span class="string">'64bit'</span>, <span class="string">'ELF'</span>)</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/16/styleSheet样式无效/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/16/styleSheet样式无效/" itemprop="url">styleSheet样式无效</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-16T00:00:00+08:00">
+                2017-12-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/12/16/styleSheet样式无效/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2017/12/16/styleSheet样式无效/" class="cy_cmt_count" data-xid="2017/12/16/styleSheet样式无效/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="CSubWidget-设置的窗体样式是无效的，"><a href="#CSubWidget-设置的窗体样式是无效的，" class="headerlink" title="CSubWidget 设置的窗体样式是无效的，"></a>CSubWidget 设置的窗体样式是无效的，</h3><p>查看文档会发现</p>
+<blockquote>
+<p>QWidget<br>Supports only the background, background-clip and background-origin properties.<br>If you subclass from QWidget, you need to provide a paintEvent for your custom QWidget as below:<br>void CustomWidget::paintEvent(QPaintEvent *)<br>{<br>    QStyleOption opt;<br>    opt.init(this);<br>    QPainter p(this);<br>    style()-&gt;drawPrimitive(QStyle::PE_Widget, &amp;opt, &amp;p, this);<br>}<br>The above code is a no-operation if there is no stylesheet set.<br>Warning: Make sure you define the Q_OBJECT macro for your custom widget.</p>
+</blockquote>
+<h3 id="为CSubWidget-加上paintEvent就可以解决"><a href="#为CSubWidget-加上paintEvent就可以解决" class="headerlink" title="为CSubWidget 加上paintEvent就可以解决"></a>为CSubWidget 加上paintEvent就可以解决</h3>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/07/QT控件及示例/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/07/QT控件及示例/" itemprop="url">QT控件及示例</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-07T00:00:00+08:00">
+                2017-12-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/12/07/QT控件及示例/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2017/12/07/QT控件及示例/" class="cy_cmt_count" data-xid="2017/12/07/QT控件及示例/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>QT控件及示例<br>QT属性控件项目<br><a href="https://github.com/lexxmark/QtnProperty" target="_blank" rel="noopener">https://github.com/lexxmark/QtnProperty</a></p>
+<p>比特币交易软件<br><a href="https://github.com/JulyIGHOR/QtBitcoinTrader" target="_blank" rel="noopener">https://github.com/JulyIGHOR/QtBitcoinTrader</a></p>
+<p>导航控件<br><a href="http://qt-apps.org/content/show.php/NavBar?content=162885" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/NavBar?content=162885</a></p>
+<p>虚拟键盘<br><a href="http://qt-apps.org/content/show.php/VirtualKeyboard?content=107388" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/VirtualKeyboard?content=107388</a></p>
+<p>扩展控件<br><a href="http://qt-apps.org/content/show.php/ExpanderWidget?content=163843" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/ExpanderWidget?content=163843</a></p>
+<p>导航条(类似tab)<br><a href="http://qt-apps.org/content/show.php/DMSNavigation?content=163730" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/DMSNavigation?content=163730</a></p>
+<p>类似Xp左侧的扩展组工具<br><a href="http://qt-apps.org/content/show.php/iisTaskPanel?content=79286" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/iisTaskPanel?content=79286</a></p>
+<p>仪表控件<br><a href="http://qt-apps.org/content/show.php/AnalogWidgets?content=87780" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/AnalogWidgets?content=87780</a></p>
+<p>遮罩控件<br><a href="http://qt-apps.org/content/show.php/QLightBoxWidget?content=162277" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/QLightBoxWidget?content=162277</a></p>
+<p>又一个简单的属性控件<br><a href="http://qt-apps.org/content/show.php/Simple+Object+Inspector?content=162244" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/Simple+Object+Inspector?content=162244</a></p>
+<p>按钮样式设计器<br><a href="http://qt-apps.org/content/show.php/Button+Styler?content=162217" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/Button+Styler?content=162217</a></p>
+<p>密集网格控件<br><a href="http://qt-apps.org/content/show.php/GridView?content=158138" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/GridView?content=158138</a></p>
+<p>全屏适配器<br><a href="http://qt-apps.org/content/show.php/QFullScreenAdapter?content=153900" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/QFullScreenAdapter?content=153900</a></p>
+<p>多选下拉列表<br><a href="http://qt-apps.org/content/show.php/QMultiComboBox?content=149416" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/QMultiComboBox?content=149416</a></p>
+<p>数字键盘<br><a href="http://qt-apps.org/content/show.php/NUMPAD?content=155032" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/NUMPAD?content=155032</a></p>
+<p>table表头控件<br><a href="http://qt-apps.org/content/show.php/QSpreadsheetHeaderView?content=154405" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/QSpreadsheetHeaderView?content=154405</a></p>
+<p>指令应答控件(类似控制台)<br><a href="http://qt-apps.org/content/show.php/ReplWidget?content=152031" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/ReplWidget?content=152031</a></p>
+<p>十六进制控件未下载成功<br><a href="http://qt-apps.org/content/show.php/QHexEdit?content=133189" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/QHexEdit?content=133189</a><br><a href="https://code.google.com/p/qhexedit2/source/checkout" target="_blank" rel="noopener">https://code.google.com/p/qhexedit2/source/checkout</a></p>
+<p>侧边控件(类安卓)<br><a href="http://qt-apps.org/content/show.php/Sidebar+?content=147860" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/Sidebar+?content=147860</a></p>
+<p>多表头控件<br><a href="http://qt-apps.org/content/show.php/HierarchicalHeaderView?content=103154" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/HierarchicalHeaderView?content=103154</a></p>
+<p>仪表控件<br><a href="http://qt-apps.org/content/show.php/QNeedleIndicator?content=118474" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/QNeedleIndicator?content=118474</a></p>
+<p>有很多控件的集合<br><a href="http://qt-apps.org/content/show.php/wwWidgets?content=126142" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/wwWidgets?content=126142</a></p>
+<p>图标动态变大小的工具条cool<br><a href="http://qt-apps.org/content/show.php/QIrDock?content=115318" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/QIrDock?content=115318</a></p>
+<p>属性控件<br><a href="http://qt-apps.org/content/show.php/yape+%28Yet+another+property+editor%29?content=100064" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/yape+%28Yet+another+property+editor%29?content=100064</a></p>
+<p>很牛的Grid，带树，带分隔<br><a href="http://qt-apps.org/content/show.php/QExtendedWidgets?content=103163" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/QExtendedWidgets?content=103163</a></p>
+<p>像wpf的照片墙(无法下载)<br><a href="http://qt-apps.org/content/show.php/THCoverFlow?content=102200" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/THCoverFlow?content=102200</a></p>
+<p>液晶板控件(较粗)<br><a href="http://qt-apps.org/content/show.php/QLedMatrix?content=101193" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/QLedMatrix?content=101193</a></p>
+<p>属性控件<br><a href="http://qt-apps.org/content/show.php/Value+Browser?content=50717" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/Value+Browser?content=50717</a></p>
+<p>数据列表控件（可打印）<br><a href="http://qt-apps.org/content/show.php/Thetyss+Data+Browser?content=76696" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/Thetyss+Data+Browser?content=76696</a></p>
+<p>MacNavBar<br><a href="http://qt-apps.org/content/show.php/QfMacNavBar?content=78749" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/QfMacNavBar?content=78749</a></p>
+<p>倒影控件<br><a href="http://qt-apps.org/content/show.php/QReflex?content=75962" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/QReflex?content=75962</a></p>
+<p>音量控件<br><a href="http://qt-apps.org/content/show.php/QVUMeter?content=75678" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/QVUMeter?content=75678</a></p>
+<p>照片墙控件像wpf<br><a href="http://qt-apps.org/content/show.php/PictureFlow?content=75348" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/PictureFlow?content=75348</a></p>
+<p>液晶板控件(细)<br><a href="http://qt-apps.org/content/show.php/QSlide?content=75303" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/QSlide?content=75303</a></p>
+<p>下拉按钮<br><a href="http://qt-apps.org/content/show.php/EnumComboBox?content=166012" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/EnumComboBox?content=166012</a></p>
+<p>加速器(悬浮按钮)<br><a href="http://qt-apps.org/content/show.php/modern+computer+flatboat?content=156221" target="_blank" rel="noopener">http://qt-apps.org/content/show.php/modern+computer+flatboat?content=156221</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/01/QTableWidget与QTableView的区别/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/01/QTableWidget与QTableView的区别/" itemprop="url">QTableWidget与QTableView的区别</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-01T00:00:00+08:00">
+                2017-12-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/12/01/QTableWidget与QTableView的区别/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2017/12/01/QTableWidget与QTableView的区别/" class="cy_cmt_count" data-xid="2017/12/01/QTableWidget与QTableView的区别/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="QTableWidget与QTableView的区别"><a href="#QTableWidget与QTableView的区别" class="headerlink" title="QTableWidget与QTableView的区别"></a>QTableWidget与QTableView的区别</h1><p>QTableWidget继承自QTableView。QSqlTableModel能与QTableView绑定，但不能于QTableWidget绑定。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">QSqlTableModel *model = <span class="keyword">new</span> QSqlTableModel;  </span><br><span class="line">model-&gt;setTable(<span class="string">"employee"</span>);  </span><br><span class="line">model-&gt;setEditStrategy(QSqlTableModel::OnManualSubmit);  </span><br><span class="line">model-&gt;select();  </span><br><span class="line">model-&gt;removeColumn(<span class="number">0</span>); <span class="comment">// don't show the ID  </span></span><br><span class="line">model-&gt;setHeaderData(<span class="number">0</span>, Qt::Horizontal, tr(<span class="string">"Name"</span>));  </span><br><span class="line">model-&gt;setHeaderData(<span class="number">1</span>, Qt::Horizontal, tr(<span class="string">"Salary"</span>));  </span><br><span class="line">   </span><br><span class="line">QTableView *view = <span class="keyword">new</span> QTableView;  </span><br><span class="line">view-&gt;setModel(model);  </span><br><span class="line">view-&gt;show();</span><br></pre></td></tr></table></figure>
+<p>QTableWidget是QT程序中常用的显示数据表格的空间，很类似于VC、C#中的DataGrid。说到QTableWidget，就必须讲一下它跟QTabelView的区别了。</p>
+<p>​ QTableWidget是QTableView的子类，主要的区别是QTableView可以使用自定义的数据模型来显示内容(也就是先要通过setModel来绑定数据源)，而QTableWidget则只能使用标准的数据模型，并且其单元格数据是QTableWidgetItem的对象来实现的(也就是不需要数据源，将逐个单元格内的信息填好即可)。这主要体现在QTableView类中有setModel成员函数，而到了QTableWidget类中，该成员函数变成了私有。使用QTableWidget就离不开QTableWidgetItem。QTableWidgetItem用来表示表格中的一个单元格，正个表格都需要用逐个单元格构建起来。</p>
+<p>​ 具体区别表格<br>| 区别点 | QTableView | QTableWidget |<br>| — | — | — |<br>| 继承关系 |  | QTableWidget继承自QTableView |<br>| 使用数据模型setModel | 可以使用setModel设置数据模型 | setModel是私有函数，不难使用该函数设置数据模型 |<br>| 显示复选框setCheckState | 没有函数实现复选框 | QTableWidgetItem类中的setCheckState(Qt::Checked);可以设置复选框 |<br>| 与QSqlTableModel绑定 | QTableView能与QSqlTableModel绑定 | QtableWidget不能与QSqlTableModel绑定 |</p>
+<p>View与Model绑定注意事项</p>
+<p>但视图与模型绑定时，模型必须使用new来创建。否则视图不能随着模型的改变而改变。</p>
+<p>Eorror错误的写法<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">QStandardItemModel <span class="title">model</span><span class="params">(<span class="number">4</span>,<span class="number">2</span>)</span></span>;  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">model.setHeaderData(<span class="number">0</span>, Qt::Horizontal, tr(<span class="string">"Label"</span>));  </span><br><span class="line">model.setHeaderData(<span class="number">1</span>, Qt::Horizontal, tr(<span class="string">"Quantity"</span>));  </span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">ui.tableView-&gt;setModel(&amp;model);  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; <span class="number">4</span>; ++row) &#123;  </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> column = <span class="number">0</span>; column &lt; <span class="number">2</span>; ++column) &#123;  </span><br><span class="line">        QModelIndex index = model.index(row, column, QModelIndex());  </span><br><span class="line">        model.setData(index, QVariant((row+<span class="number">1</span>) * (column+<span class="number">1</span>)));  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Right 正确的写法<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">QStandardItemModel *model;  </span><br><span class="line">  </span><br><span class="line">model = <span class="keyword">new</span> QStandardItemModel(<span class="number">4</span>,<span class="number">2</span>);  </span><br><span class="line">ui.tableView-&gt;setModel(model);  </span><br><span class="line">  </span><br><span class="line">model-&gt;setHeaderData(<span class="number">0</span>, Qt::Horizontal, tr(<span class="string">"Label"</span>));  </span><br><span class="line">model-&gt;setHeaderData(<span class="number">1</span>, Qt::Horizontal, tr(<span class="string">"Quantity"</span>));  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; <span class="number">4</span>; ++row) &#123;  </span><br><span class="line">     <span class="keyword">for</span> (<span class="keyword">int</span> column = <span class="number">0</span>; column &lt; <span class="number">2</span>; ++column) &#123;  </span><br><span class="line">         QModelIndex index = model-&gt;index(row, column, QModelIndex());  </span><br><span class="line">         model-&gt;setData(index, QVariant((row+<span class="number">1</span>) * (column+<span class="number">1</span>)));  </span><br><span class="line">     &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/20/QMediaPlayer多媒体类/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/20/QMediaPlayer多媒体类/" itemprop="url">QMediaPlayer多媒体类</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-20T00:00:00+08:00">
+                2017-11-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/11/20/QMediaPlayer多媒体类/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2017/11/20/QMediaPlayer多媒体类/" class="cy_cmt_count" data-xid="2017/11/20/QMediaPlayer多媒体类/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="1-多媒体播放"><a href="#1-多媒体播放" class="headerlink" title="1.多媒体播放"></a>1.多媒体播放</h4><p>QMediaPlayer类是QT自带的多媒体类。 实现简单的音视频播放是很简单的。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">QMediaPlayer qtaudioPlayer;</span><br><span class="line">​</span><br><span class="line">qtaudioPlayer-&gt;setMedia(QUrl::fromLocalFile(filePath));</span><br><span class="line">​</span><br><span class="line">qtaudioPlayer-&gt;play();</span><br></pre></td></tr></table></figure></p>
+<p>这里的filePath如果是音频路径，就直接播放音频， 如果是视频路径就直接播放视频。</p>
+<p>如果是服务上的音视频路径的话， 需要在前面加上一个http://头， 当然如果返回就自带http://头就不用加。</p>
+<p>如：服务器返回一个<a href="http://www.test.com/test.wav" target="_blank" rel="noopener">www.test.com/test.wav</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">filePath = QLatin1String(http://www.test.com/test.wav);</span><br><span class="line">​</span><br><span class="line">qtaudioPlayer-&gt;setMedia(QUrl::fromLocalFile(filePath));</span><br></pre></td></tr></table></figure></p>
+<p>这样就可以直接播放网络上的音视频文件了。</p>
+<h4 id="2-多媒体控制"><a href="#2-多媒体控制" class="headerlink" title="2.多媒体控制"></a>2.多媒体控制</h4><p>当然简单的音视频播放是很容易，在实际的播放器制作过程中，需要控制播放过程中的很多操作，QMediaPlayer 提供了很多信号，来让用户处理。</p>
+<p>如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mediaStatusChanged(QMediaPlayer::MediaStatus)</span><br></pre></td></tr></table></figure></p>
+<p>这个是音视频状态改变的信号， 如：暂停， 停止， 播放，它都能直接监控<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">durationChanged(qint64)</span><br></pre></td></tr></table></figure></p>
+<p>这个是播放文件数据总大小的信号， 它可以获得文件时间长度。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">positionChanged(qint64)</span><br></pre></td></tr></table></figure></p>
+<p>这个是播放到什么位置的信号， 参数是以毫秒来计算的。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">volumeChanged(int)</span><br></pre></td></tr></table></figure></p>
+<p>这个是声音调节的信号，监控当前声音的大小<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mutedChanged(bool)</span><br></pre></td></tr></table></figure></p>
+<p>这个是是否为静音的信号。</p>
+<p>==音视频播放的过程中， 位置和总大小都是用毫秒表示的，可以进行单位换算==。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/16/QLineEdit的setInputMask和正则表达式冲突/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/16/QLineEdit的setInputMask和正则表达式冲突/" itemprop="url">QLineEdit的setInputMask和正则表达式冲突</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-16T00:00:00+08:00">
+                2017-11-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/11/16/QLineEdit的setInputMask和正则表达式冲突/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2017/11/16/QLineEdit的setInputMask和正则表达式冲突/" class="cy_cmt_count" data-xid="2017/11/16/QLineEdit的setInputMask和正则表达式冲突/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="疑问："><a href="#疑问：" class="headerlink" title="疑问："></a>疑问：</h4><p>我想做个IP控件，看到很多个，感觉都不是很理想。就想用下面的形式来做：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">QRegExp regExp(&quot;^(\d&#123;1,2&#125;|1\d\d|2[0-4]\d|25[0-5])...$&quot;);   </span><br><span class="line">​</span><br><span class="line">ipEdit-&gt;setValidator(new QRegExpValidator(regExp, this));</span><br><span class="line">​</span><br><span class="line">ipEdit-&gt;setInputMask(&quot;000.000.000.000&quot;);</span><br></pre></td></tr></table></figure></p>
+<p>可是这样发现，当设置setInputMask后，前面的正则表达式就不起作用了，请问下这个是怎样回事，是不是setInputMask本身就是一个正则表达式，这样就把之前的给覆盖了.</p>
+<h4 id="2-解决方案"><a href="#2-解决方案" class="headerlink" title="2.解决方案"></a>2.解决方案</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ipEdit-&gt;setInputMask(&quot;000.000.000.000&quot;);</span><br><span class="line">​</span><br><span class="line">改成 ipEdit-&gt;setInputMask(&quot;000.000.000.000;0&quot;);</span><br></pre></td></tr></table></figure>
+<p>就会同时生效 “;0”表示删除时默认填充为0 不想填充为0 可改为“; ”</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/15/IP地址的正则表达式写法/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/15/IP地址的正则表达式写法/" itemprop="url">IP地址的正则表达式写法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-15T00:00:00+08:00">
+                2017-11-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/11/15/IP地址的正则表达式写法/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2017/11/15/IP地址的正则表达式写法/" class="cy_cmt_count" data-xid="2017/11/15/IP地址的正则表达式写法/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>这里所描述的的是IPv4的地址格式，总长度 32位=4段*8位，每段之间用.分割， 每段都是0-255之间的十进制数值。</p>
+<p>将0-255用正则表达式表示，可以分成一下几块来分别考虑：</p>
+<table>
+<thead>
+<tr>
+<th>取值区间</th>
+<th>特点</th>
+<th>正则写法</th>
+<th>可合并的写法</th>
+<th>可合并的写法</th>
+<th>可合并的写法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0-9</td>
+<td>一位数，只有个位，取值是0~9</td>
+<td>\d</td>
+<td>[1-9]?\d</td>
+<td>(1\d{2})</td>
+<td>([1-9]?\d)</td>
+<td>(25[0-5]</td>
+<td>2[0-4]\d</td>
+<td>((1\d{2})</td>
+<td>([1-9]?\d))</td>
+</tr>
+<tr>
+<td>10-99</td>
+<td>两位数，十位取值1-9，个位取值是0~9</td>
+<td>[1-9]\d</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>100-199</td>
+<td>三位数，最高位取值为1，十位取值0-9，个位取值0-9</td>
+<td>1\d{2}</td>
+<td>-</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>200-249</td>
+<td>三位数，最高位取值为2，十位取值0-4，个位取值0-9</td>
+<td>2[0-4]\d</td>
+<td>-</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>250-255</td>
+<td>三位数，最高位取值为2，十位取值5，个位取值0-5</td>
+<td>25[0-5]</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>IP地址格式可表示为：XXX.XXX.XXX.XXX，XXX取值范围是0-255，前三段加一个.重复了三次，在与最后一段合并及组成IP地址的完整格式。</p>
+<p>所以IP地址的正则表示法如下：<br><code>((25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))\.){3}(25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))</code></p>
+<p>Qt中的正则表达式与C++中的有点区别：”\d”表示”\d”（<code>双斜杠表示单斜杠</code>）</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/15/MySQL主从同步的原理/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/15/MySQL主从同步的原理/" itemprop="url">MySQL主从同步的原理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-15T00:00:00+08:00">
+                2017-11-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/11/15/MySQL主从同步的原理/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2017/11/15/MySQL主从同步的原理/" class="cy_cmt_count" data-xid="2017/11/15/MySQL主从同步的原理/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>主从同步的原理：<br>1、主库上面有一个IO线程，从库上有一个IO线程和一个SQL线程，从库中的IO线程负责从主库读取binlog，并写入从库的中继日志；SQL线程负责读取并执行中继日志中的binlog，转换sql语句后应用数据库汇总<br>2、通信是：</p>
+<ul>
+<li>从库的IO线程给主库发送同步请求，请求中包含用户名密码和binlog的文件名，pos点</li>
+<li>主库验证成功后，发送从库需要的binlog日志文件，和binlog文件中pos点</li>
+<li>从库的IO线程接收后，把binlog文件转存到中继日志的relay-log文件，并把binlog文件名和pos点记录到master.info文件中，方便下次通信使用</li>
+<li>从库的SQl线程监测出relay-log文件后，把relay-log文件转换为binlog文件在本地执行，并把relay-log文件名和pos点记录到relay-log.info文件中</li>
+<li>从库再次发送下一轮的请求~~~</li>
+</ul>
+<p>如果slave后面还挂有从库则也要开启binlog，并添加一个参数log-slave-updates</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="vae的节奏">
+          <p class="site-author-name" itemprop="name">vae的节奏</p>
+           
+              <p class="site-description motion-element" itemprop="description">vae的个人博客</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">36</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/vae-0118" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="mailto:149759490@qq.com" target="_blank" title="E-Mail">
+                  
+                    <i class="fa fa-fw fa-envelope"></i>
+                  
+                    
+                      E-Mail
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/vae_0118" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                    
+                      Twitter
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.weibo.com/liuvae" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                    
+                      Weibo
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.douban.com/people/49980143/" target="_blank" title="DouBan">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      DouBan
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/liu-vae/" target="_blank" title="ZhiHu">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      ZhiHu
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">vae的节奏</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+<br><a href="http://www.miitbeian.gov.cn/">鄂ICP备18021832号</a> 
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cytTcHj25"></script>
+  
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

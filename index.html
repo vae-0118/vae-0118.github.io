@@ -1,0 +1,2699 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="编程, Python, Qt, C/C++">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="vae的记事本" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2">
+
+
+
+
+
+
+<meta name="description" content="vae的个人博客">
+<meta name="keywords" content="编程,Python,Qt,产品">
+<meta property="og:type" content="website">
+<meta property="og:title" content="vae的记事本">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="vae的记事本">
+<meta property="og:description" content="vae的个人博客">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="vae的记事本">
+<meta name="twitter:description" content="vae的个人博客">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/">
+
+
+
+
+
+  <title>vae的记事本</title>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=66099842";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">vae的记事本</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">做一个有趣的产品，取悦自己</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/16/Ubuntu-18-04-开机启动/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/05/16/Ubuntu-18-04-开机启动/" itemprop="url">Ubuntu 18.04 开机启动</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-16T11:33:04+08:00">
+                2019-05-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/工作/" itemprop="url" rel="index">
+                    <span itemprop="name">工作</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2019/05/16/Ubuntu-18-04-开机启动/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2019/05/16/Ubuntu-18-04-开机启动/" class="cy_cmt_count" data-xid="2019/05/16/Ubuntu-18-04-开机启动/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Ubuntu-18-04-开机启动"><a href="#Ubuntu-18-04-开机启动" class="headerlink" title="Ubuntu 18.04 开机启动"></a>Ubuntu 18.04 开机启动</h1><p>Ubuntu 18.04更改了系统初始化程序，在之前用的是==init==，现在用的是==systemd==。</p>
+<p>所以现在配置开启启动脚本，不再是配置==/etc/rc.local==，而是在配置systemd的配置文件。</p>
+<ol>
+<li><h2 id="配置systemd启动"><a href="#配置systemd启动" class="headerlink" title="配置systemd启动"></a>配置systemd启动</h2><p>systemd默认读取/etc/systemd/system下的配置文件。一般系统安装完/lib/systemd/system/下会有rc-local.service文件，复制过来用即可，由于我之前已经配置好了，就直接给出该文件。 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /etc/systemd/system/</span><br><span class="line">vi rc-local.service</span><br><span class="line"></span><br><span class="line">[Unit]</span><br><span class="line">Description=/etc/rc.local Compatibility</span><br><span class="line">ConditionPathExists=/etc/rc.local</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line">ExecStart=/etc/rc.local start</span><br><span class="line">TimeoutSec=0</span><br><span class="line">StandardOutput=tty</span><br><span class="line">RemainAfterExit=yes</span><br><span class="line">SysVStartPriority=99</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ol start="2">
+<li><h2 id="配置启动脚本"><a href="#配置启动脚本" class="headerlink" title="配置启动脚本"></a>配置启动脚本</h2><p>此时已经配置了 ==/etc/rc.local== 为启动脚本。但是我们还未创建==/etc/rc.local==，故创建并且编辑该文件。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/bin/sh -e</span></span><br><span class="line"></span><br><span class="line">date &gt;&gt; /root/start.log</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">exit</span> 0</span><br></pre></td></tr></table></figure>
+<p>由于该文件为系统文件，为了避免经常改动系统文件。故利用该文件，再引导启动一个用户文件，即 ==/root/bin/rc-vae.sh==。</p>
+</li>
+</ol>
+<ol start="3">
+<li><h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>重启服务器，查看是否有 ==/root/start.log==文件生成。如果有文件生成，即配置成功。</p>
+</li>
+</ol>
+<ol start="4">
+<li><h2 id="创建用户启动文件"><a href="#创建用户启动文件" class="headerlink" title="创建用户启动文件"></a>创建用户启动文件</h2><p>为了避免每次修改启动文件，都去更改系统目录下的文件，故修改==rc.local==文件为如下内容，即创建一个用户的启动文件，并且有==rc.local==引导。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/bin/sh -e</span></span><br><span class="line"></span><br><span class="line">/root/bin/rc-vae.sh &amp; </span><br><span class="line"></span><br><span class="line"><span class="built_in">exit</span> 0</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li><h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>相关的文件不要忘了加上==可执行==权限。</p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/17/Python中XML的读写总结/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/17/Python中XML的读写总结/" itemprop="url">Python中XML的读写总结</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-17T00:00:00+08:00">
+                2018-08-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/08/17/Python中XML的读写总结/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2018/08/17/Python中XML的读写总结/" class="cy_cmt_count" data-xid="2018/08/17/Python中XML的读写总结/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="基于DOM"><a href="#基于DOM" class="headerlink" title="基于DOM"></a>基于DOM</h1><p>导入： <code>import xml.dom.minidom as minidom</code></p>
+<h2 id="写入"><a href="#写入" class="headerlink" title="写入"></a>写入</h2><p>创建文档：<br><code>dom = minidom.getDOMImplementation().createDocument(None,&#39;Root&#39;,None)</code><br>获得根节点：<code>root = dom.documentElement</code><br>创建节点：<code>element = dom.createElement(&#39;Name&#39;)</code><br>给这个节点添加文本：<code>element.appendChild(dom.createTextNode(&#39;default&#39;))</code><br>注意：这里的节点文本值是存成另外一个节点的，是<code>createTextNode</code><br>设置属性：<code>element.setAttribute(&#39;age&#39;, &#39;20&#39;)</code><br>添加到节点：<code>root.appendChild(element)</code><br>完整代码：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"><span class="keyword">import</span> xml.dom.minidom <span class="keyword">as</span> minidom</span><br><span class="line">dom = minidom.getDOMImplementation().createDocument(<span class="keyword">None</span>,<span class="string">'Root'</span>,<span class="keyword">None</span>)</span><br><span class="line">root = dom.documentElement</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):</span><br><span class="line">    element = dom.createElement(<span class="string">'Name'</span>)</span><br><span class="line">    element.appendChild(dom.createTextNode(<span class="string">'default'</span>))</span><br><span class="line">    element.setAttribute(<span class="string">'age'</span>, str(i))</span><br><span class="line">    root.appendChild(element)</span><br><span class="line"><span class="comment"># 保存文件</span></span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'default.xml'</span>, <span class="string">'w'</span>, encoding=<span class="string">'utf-8'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    dom.writexml(f, addindent=<span class="string">'\t'</span>, newl=<span class="string">'\n'</span>,encoding=<span class="string">'utf-8'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 文档内容</span></span><br><span class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span><br><span class="line">&lt;Root&gt;</span><br><span class="line">    &lt;Name age="0"&gt;default&lt;/Name&gt;</span><br><span class="line">    &lt;Name age="1"&gt;default&lt;/Name&gt;</span><br><span class="line">    &lt;Name age="2"&gt;default&lt;/Name&gt;</span><br><span class="line">    &lt;Name age="3"&gt;default&lt;/Name&gt;</span><br><span class="line">    &lt;Name age="4"&gt;default&lt;/Name&gt;</span><br><span class="line">&lt;/Root&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="读取"><a href="#读取" class="headerlink" title="读取"></a>读取</h2><p>读取文档：<code>dom = minidom.parse(&#39;default.xml&#39;)</code><br>获得根节点：<code>root = dom.documentElement</code><br>按照名称查找子节点，注意这里会递归查找所有子节点：<code>names = root.getElementsByTagName(&#39;Name&#39;)</code><br>所有的子节点：<code>root.childNodes</code><br>注意：每个节点的文本值存在<code>TextNode</code>节点中，也就是最后一个节点的第一个子节点<br>查看是否含有属性：<code>name.hasAttribute(&#39;age&#39;)</code><br>查看属性：<code>name.getAttribute(&#39;age&#39;)</code><br>完整代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">dom = minidom.parse(<span class="string">'default.xml'</span>)</span><br><span class="line">root = dom.documentElement</span><br><span class="line">names = root.getElementsByTagName(<span class="string">'Name'</span>)</span><br><span class="line"><span class="keyword">for</span> name <span class="keyword">in</span> names:</span><br><span class="line">    <span class="comment"># 它的第一个子节点是一个textnode，存取的是真正的节点值</span></span><br><span class="line">    print(name.childNodes[<span class="number">0</span>].nodeValue, end=<span class="string">'\t'</span>)</span><br><span class="line">    <span class="keyword">if</span> name.hasAttribute(<span class="string">'age'</span>):</span><br><span class="line">        print(name.getAttribute(<span class="string">'age'</span>), end=<span class="string">'\t'</span>)</span><br><span class="line">    print(<span class="string">''</span>)</span><br><span class="line"><span class="comment"># 输出</span></span><br><span class="line">default <span class="number">0</span>   </span><br><span class="line">default <span class="number">1</span>   </span><br><span class="line">default <span class="number">2</span>   </span><br><span class="line">default <span class="number">3</span>   </span><br><span class="line">default <span class="number">4</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="基于ElementTree"><a href="#基于ElementTree" class="headerlink" title="基于ElementTree"></a>基于ElementTree</h1><p>导入：<code>import xml.etree.ElementTree as ET</code></p>
+<h2 id="写入-1"><a href="#写入-1" class="headerlink" title="写入"></a>写入</h2><p>创建节点：<code>root = ET.Element(&#39;Root&#39;)</code><br>创建文档：<code>tree = ET.ElementTree(root)</code><br>设置文本值：<code>element.text = &#39;default&#39;</code><br>设置属性：<code>element.set(&#39;age&#39;, str(i))</code><br>添加节点：<code>root.append(element)</code><br>写入文档：<code>tree.write(&#39;default.xml&#39;, encoding=&#39;utf-8&#39;, xml_declaration=True)</code><br>但这样写入会有个问题，写入的<code>XML</code>会在同一行，缺少换行符，<code>Etree</code>本身并没有提供换行的选项，翻看了国外大神的回答，对<code>root</code>处理以后，再次写入将有换行符。完整代码如下：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> xml.etree.ElementTree <span class="keyword">as</span> ET</span><br><span class="line"><span class="comment"># 增加换行符</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">__indent</span><span class="params">(elem, level=<span class="number">0</span>)</span>:</span></span><br><span class="line">    i = <span class="string">"\n"</span> + level*<span class="string">"\t"</span></span><br><span class="line">    <span class="keyword">if</span> len(elem):</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> elem.text <span class="keyword">or</span> <span class="keyword">not</span> elem.text.strip():</span><br><span class="line">            elem.text = i + <span class="string">"\t"</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> elem.tail <span class="keyword">or</span> <span class="keyword">not</span> elem.tail.strip():</span><br><span class="line">            elem.tail = i</span><br><span class="line">        <span class="keyword">for</span> elem <span class="keyword">in</span> elem:</span><br><span class="line">            __indent(elem, level+<span class="number">1</span>)</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> elem.tail <span class="keyword">or</span> <span class="keyword">not</span> elem.tail.strip():</span><br><span class="line">            elem.tail = i</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">if</span> level <span class="keyword">and</span> (<span class="keyword">not</span> elem.tail <span class="keyword">or</span> <span class="keyword">not</span> elem.tail.strip()):</span><br><span class="line">            elem.tail = i</span><br><span class="line"></span><br><span class="line">root = ET.Element(<span class="string">'Root'</span>)       <span class="comment"># 创建节点</span></span><br><span class="line">tree = ET.ElementTree(root)     <span class="comment"># 创建文档</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):</span><br><span class="line">    element = ET.Element(<span class="string">'Name'</span>)</span><br><span class="line">    element.set(<span class="string">'age'</span>, str(i))</span><br><span class="line">    element.text = <span class="string">'default'</span></span><br><span class="line">    root.append(element)</span><br><span class="line"></span><br><span class="line">__indent(root)          <span class="comment"># 增加换行符</span></span><br><span class="line">tree.write(<span class="string">'default.xml'</span>, encoding=<span class="string">'utf-8'</span>, xml_declaration=<span class="keyword">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 文档内容</span></span><br><span class="line">&lt;?xml version='1.0' encoding='utf-8'?&gt;</span><br><span class="line">&lt;Root&gt;</span><br><span class="line">    &lt;Name age="0"&gt;default&lt;/Name&gt;</span><br><span class="line">    &lt;Name age="1"&gt;default&lt;/Name&gt;</span><br><span class="line">    &lt;Name age="2"&gt;default&lt;/Name&gt;</span><br><span class="line">    &lt;Name age="3"&gt;default&lt;/Name&gt;</span><br><span class="line">    &lt;Name age="4"&gt;default&lt;/Name&gt;</span><br><span class="line">&lt;/Root&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="读取-1"><a href="#读取-1" class="headerlink" title="读取"></a>读取</h2><p>读取文档：<code>tree = ET.parse(&#39;default.xml&#39;)</code><br>获得根节点：<code>root = tree.getroot()</code><br>获得所有子节点：<code>list(root)</code><br>查找子节点，注意这里不会递归查找所有子节点：<code>root.findall(&#39;Name&#39;)</code><br>查找子节点，递归查找所有子节点：<code>root.iter(&#39;Name&#39;)</code><br>查看节点名称：<code>root.tag</code><br>全部代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> xml.etree.ElementTree <span class="keyword">as</span> ET</span><br><span class="line"></span><br><span class="line">tree = ET.parse(<span class="string">'default.xml'</span>)</span><br><span class="line">root = tree.getroot()</span><br><span class="line"><span class="keyword">for</span> node <span class="keyword">in</span> list(root):</span><br><span class="line">    print(node.text, node.tag, node.get(<span class="string">'age'</span>))</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> node <span class="keyword">in</span> root.findall(<span class="string">'Name'</span>):</span><br><span class="line">    print(node.text, node.tag, node.get(<span class="string">'age'</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 输出</span></span><br><span class="line">default Name <span class="number">0</span></span><br><span class="line">default Name <span class="number">1</span></span><br><span class="line">default Name <span class="number">2</span></span><br><span class="line">default Name <span class="number">3</span></span><br><span class="line">default Name <span class="number">4</span></span><br><span class="line">default Name <span class="number">0</span></span><br><span class="line">default Name <span class="number">1</span></span><br><span class="line">default Name <span class="number">2</span></span><br><span class="line">default Name <span class="number">3</span></span><br><span class="line">default Name <span class="number">4</span></span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/11/Event事件机制/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/11/Event事件机制/" itemprop="url">Event事件机制</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-11T00:00:00+08:00">
+                2018-07-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/07/11/Event事件机制/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2018/07/11/Event事件机制/" class="cy_cmt_count" data-xid="2018/07/11/Event事件机制/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="1-事件类"><a href="#1-事件类" class="headerlink" title="1.事件类"></a>1.事件类</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">QAbstractEventDispatcher        <span class="comment">//Interface to manage Qt's event queue</span></span><br><span class="line">QBasicTimer                     <span class="comment">//Timer events for objects</span></span><br><span class="line">QChildEvent                     <span class="comment">//Contains event parameters for child object events</span></span><br><span class="line">QDynamicPropertyChangeEvent     <span class="comment">//Contains event parameters for dynamic property change events</span></span><br><span class="line">QEvent          <span class="comment">//The base class of all event classes. Event objects contain event parameters</span></span><br><span class="line">QTimerEvent                     <span class="comment">//Contains parameters that describe a timer event</span></span><br><span class="line">QTimer                          <span class="comment">//Repetitive and single-shot timers</span></span><br><span class="line">QActionEvent            <span class="comment">//Event that is generated when a QAction is added, removed, or changed</span></span><br><span class="line">QCloseEvent             <span class="comment">//Contains parameters that describe a close event</span></span><br><span class="line">QContextMenuEvent       <span class="comment">//Contains parameters that describe a context menu event</span></span><br><span class="line">QDragEnterEvent         <span class="comment">//Event which is sent to a widget when a drag and drop action enters it</span></span><br><span class="line">QDragLeaveEvent         <span class="comment">//Event that is sent to a widget when a drag and drop action leaves it</span></span><br><span class="line">QDragMoveEvent          <span class="comment">//Event which is sent while a drag and drop action is in progress</span></span><br><span class="line">QDropEvent              <span class="comment">//Event which is sent when a drag and drop action is completed</span></span><br><span class="line">QEnterEvent             <span class="comment">//Contains parameters that describe an enter event</span></span><br><span class="line">QExposeEvent            <span class="comment">//Contains event parameters for expose events</span></span><br><span class="line">QFileOpenEvent      <span class="comment">//Event that will be sent when there is a request to open a file or a URL</span></span><br><span class="line">QFocusEvent         <span class="comment">//Contains event parameters for widget focus events</span></span><br><span class="line">QHelpEvent      <span class="comment">//Event that is used to request helpful information about a particular point in a widget</span></span><br><span class="line">QHideEvent      <span class="comment">//Event which is sent after a widget is hidden</span></span><br><span class="line">QHoverEvent     <span class="comment">//Contains parameters that describe a mouse event</span></span><br><span class="line">QIconDragEvent  <span class="comment">//Indicates that a main icon drag has begun</span></span><br><span class="line">QInputEvent     <span class="comment">//The base class for events that describe user input</span></span><br><span class="line">QInputMethodEvent       <span class="comment">//Parameters for input method events</span></span><br><span class="line">QKeyEvent               <span class="comment">//Describes a key event</span></span><br><span class="line">QMouseEvent             <span class="comment">//Contains parameters that describe a mouse event</span></span><br><span class="line">QMoveEvent              <span class="comment">//Contains event parameters for move events</span></span><br><span class="line">QNativeGestureEvent     <span class="comment">//Contains parameters that describe a gesture event</span></span><br><span class="line">QPaintEvent             <span class="comment">//Contains event parameters for paint events</span></span><br><span class="line">QPlatformSurfaceEvent       <span class="comment">//Used to notify about native platform surface events</span></span><br><span class="line">QPointingDeviceUniqueId     <span class="comment">//Identifies a unique object, such as a tagged token or stylus, which is used with a pointing device</span></span><br><span class="line">QResizeEvent            <span class="comment">//Contains event parameters for resize events</span></span><br><span class="line">QScrollEvent            <span class="comment">//Sent when scrolling</span></span><br><span class="line">QScrollPrepareEvent     <span class="comment">//Sent in preparation of scrolling</span></span><br><span class="line">QShortcutEvent          <span class="comment">//Event which is generated when the user presses a key combination</span></span><br><span class="line">QShowEvent              <span class="comment">//Event that is sent when a widget is shown</span></span><br><span class="line">QStatusTipEvent         <span class="comment">//Event that is used to show messages in a status bar</span></span><br><span class="line">QTabletEvent            <span class="comment">//Contains parameters that describe a Tablet event</span></span><br><span class="line">QTouchEvent             <span class="comment">//Contains parameters that describe a touch event</span></span><br><span class="line">QWhatsThisClickedEvent  <span class="comment">//Event that can be used to handle hyperlinks in a "What's This?" text</span></span><br><span class="line">QWheelEvent             <span class="comment">//Contains parameters that describe a wheel event</span></span><br><span class="line">QWindowStateChangeEvent         <span class="comment">//The window state before a window state change</span></span><br><span class="line">QGestureEvent                   <span class="comment">//The description of triggered gestures</span></span><br><span class="line">QShortcut                       <span class="comment">//Used to create keyboard shortcuts</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-事件函数"><a href="#2-事件函数" class="headerlink" title="2.事件函数"></a>2.事件函数</h4><p>今天要说的是event()函数。记得之前曾经提到过这个函数，说在事件对象创建完毕后，Qt将这个事件对象传递给QObject的event()函数。event()函数并不直接处理事件，而是将这些事件对象按照它们不同的类型，分发给不同的事件处理器(event handler)。</p>
+<p>event()函数主要用于事件的分发，所以，如果你希望在事件分发之前做一些操作，那么，就需要注意这个event()函数了。为了达到这种目的，我们可以重写event()函数。例如，如果你希望在窗口中的tab键按下时将焦点移动到下一组件，而不是让具有焦点的组件处理，那么你就可以继承QWidget，并重写它的event()函数，已达到这个目的：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">bool</span> MyWidget::event(QEvent *event) &#123;</span><br><span class="line">        <span class="keyword">if</span> (event-&gt;type() == QEvent::KeyPress) &#123;</span><br><span class="line">                QKeyEvent *keyEvent = <span class="keyword">static_cast</span>&lt;QKeyEvent *&gt;(event);</span><br><span class="line">                <span class="keyword">if</span> (keyEvent-&gt;key() == Qt::Key_Tab) &#123;</span><br><span class="line">                        <span class="comment">// 处理Tab鍵</span></span><br><span class="line">                        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">         &#125;</span><br><span class="line"> &#125;</span><br><span class="line"> <span class="keyword">return</span> QWidget::event(event);</span><br></pre></td></tr></table></figure></p>
+<h4 id="3-事件过滤机制"><a href="#3-事件过滤机制" class="headerlink" title="3.事件过滤机制"></a>3.事件过滤机制</h4><p>Qt创建了QEvent事件对象之后，会调用QObject的event()函数做事件的分发。有时候，你可能需要在调用event()函数之前做一些另外的操作，比如，对话框上某些组件可能并不需要响应回车按下的事件，此时，你就需要重新定义组件的event()函数。如果组件很多，就需要重写很多次event()函数，这显然没有效率。为此，你可以使用一个事件过滤器，来判断是否需要调用event()函数。</p>
+<p>QOjbect有一个eventFilter()函数，用于建立事件过滤器。这个函数的签名如下：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">virtual</span> <span class="keyword">bool</span> QObject::eventFilter(QObject *obj, QEvent *event);</span><br></pre></td></tr></table></figure></p>
+<p>如果obj对象安装了事件过滤器，这个函数会被调用并进行事件过滤，然后才轮到组件进行事件处理。在重写这个函数时，如果你需要过滤掉某个事件，例如停止对这个事件的响应，需要返回true。</p>
+<p>上面的例子中为MainWindow建立了一个事件过滤器。为了过滤某个组件上的事件，首先需要判断这个对象是哪个组件，然后判断这个事件的类型。例如，我不想让textEdit组件处理键盘事件，于是就首先找到这个组件，如果这个事件是键盘事件，则直接返回true，也就是过滤掉了这个事件，其他事件还是要继续处理，所以返回false。对于其他组件，我们并不保证是不是还有过滤器，于是最保险的办法是调用父类的函数。</p>
+<p>在创建了过滤器之后，下面要做的是安装这个过滤器。安装过滤器需要调用installEventFilter()函数。这个函数的签名如下：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> QObject::installEventFilter(QObject *obj);</span><br></pre></td></tr></table></figure></p>
+<p>这个函数是QObject的一个函数，因此可以安装到任何QObject的子类，并不仅仅是UI组件。这个函数接收一个QObject对象，调用了这个函数安装事件过滤器的组件会调用filterObj定义的eventFilter()函数。例如，textField.installEventFilter(obj)，则如果有事件发送到textField组件是，会先调用obj-&gt;eventFilter()函数，然后才会调用textField.event()。</p>
+<p>当然，你也可以把事件过滤器安装到QApplication上面，这样就可以过滤所有的事件，已获得更大的控制权。不过，这样做的后果就是会降低事件分发的效率。</p>
+<p>如果一个组件安装了多个过滤器，则最后一个安装的会最先调用，类似于堆栈的行为。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/06/PyQt5中异步刷新UI和Python中的多线程总结/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/06/PyQt5中异步刷新UI和Python中的多线程总结/" itemprop="url">PyQt5中异步刷新UI和Python中的多线程总结</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-06T00:00:00+08:00">
+                2018-07-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/07/06/PyQt5中异步刷新UI和Python中的多线程总结/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2018/07/06/PyQt5中异步刷新UI和Python中的多线程总结/" class="cy_cmt_count" data-xid="2018/07/06/PyQt5中异步刷新UI和Python中的多线程总结/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>PyQt<br>PyQt简介<br>PyQt是Qt的python接口，PyQt的文档较少，但接口和函数可以完全参照Qt，继承了Qt中大量的控件以及信号机制，十分方便。以下简介一个基本的PyQt程序。 </p>
+<ul>
+<li>需要导入的类主要来自三个包 </li>
+<li>from PyQt5.QtWidgets import 常用的控件 </li>
+<li>PyQt5.QtCore 核心功能类，如QT，QThread，pyqtSignal </li>
+<li>PyQt5.QtGui UI类，如QFont </li>
+<li>基础的程序结构：<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Example</span><span class="params">(QWidget)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        super()__init__()</span><br><span class="line">        self.setupUI()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">setupUI</span><span class="params">()</span>:</span></span><br><span class="line">        self.show()</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">        <span class="comment"># 设置UI</span></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    app = QApplication(sys.argv) <span class="comment"># 启动app</span></span><br><span class="line">    ex = Example()   <span class="comment"># 实例化一个自己派生的</span></span><br><span class="line">    <span class="comment"># 也可以实例化库中的控件</span></span><br><span class="line">    <span class="comment"># q = QPushButton()</span></span><br><span class="line">    <span class="comment"># q.show()</span></span><br><span class="line">    sys.exit(app.exec_())</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>总体来说： </p>
+<ol>
+<li>首先实例化APP </li>
+<li>实例化预定义控件或者自己派生自库中的控件，记得调用show()函数 </li>
+<li>执行并安全退出</li>
+</ol>
+<p>Python中的多线程<br>python中的多线程使用较为方便，主要使用threading.Thread类： </p>
+<ol>
+<li>线程启动使用start()函数 </li>
+<li>如果需要等待线程执行使用join，这样主线程会阻塞<h3 id="实现方式一"><a href="#实现方式一" class="headerlink" title="实现方式一"></a>实现方式一</h3></li>
+</ol>
+<p>直接传入函数，启动线程，可以传入参数<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time, threading</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">threadFunction</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">        print(<span class="number">11111</span>)</span><br><span class="line">        time.sleep()</span><br><span class="line"><span class="comment"># 用于命名，可以通过threading.current_thread().name获得</span></span><br><span class="line">t = threading.Thread(target=threadFunction, name=<span class="string">'funciton'</span>)</span><br><span class="line"><span class="comment"># 如果线程有参数</span></span><br><span class="line">t = threading.Thread(target=threadFunction, args=(), name=<span class="string">'funciton'</span>)</span><br><span class="line">t.start()</span><br></pre></td></tr></table></figure></p>
+<h3 id="实现方式二"><a href="#实现方式二" class="headerlink" title="实现方式二"></a>实现方式二</h3><p>继承<code>Thread</code>，重写<code>run</code>方法<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> threading <span class="keyword">import</span> Thread</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Example</span><span class="params">(Thread)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        super().__init__()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">            time.sleep(<span class="number">1</span>)</span><br><span class="line">            print(<span class="number">11111111</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    a = Example()</span><br><span class="line">    a.start()</span><br><span class="line">    a.join()</span><br><span class="line">    print(<span class="number">222222222</span>)</span><br></pre></td></tr></table></figure></p>
+<p>注意：<br>1. 使用<code>join</code>方法会让主线程阻塞在这里，等待子线程结束，在里面可以设置阻塞的时间 </p>
+<ol start="2">
+<li><code>a.setDaemon(True)</code>在<code>start</code>前设置，可以保证在主线程终止时，子线程也终止</li>
+</ol>
+<h2 id="信号机制"><a href="#信号机制" class="headerlink" title="信号机制"></a>信号机制</h2><p><code>QT</code>中的信号机制能够方便的编写回调。<br>1. 很多控件都有预定的信号如<code>clicked</code>，直接使用<code>clicked.connect</code>连接槽函数即可。<br>2. 继承自Qt的类，然后自定义一个<code>signal</code>类变量，在实例连接信号就可以了<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Example</span><span class="params">(QWidget)</span>:</span></span><br><span class="line">    signal = pyqtSignal()    <span class="comment"># 括号里填写信号传递的参数</span></span><br><span class="line">    <span class="comment"># 发射信号</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.signal.emit()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用信号</span></span><br><span class="line">a = Example()</span><br><span class="line">a.signal.connect(callback)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 槽函数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">callback</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="UI刷新"><a href="#UI刷新" class="headerlink" title="UI刷新"></a>UI刷新</h2><p>在界面中，通常用会有一些按钮，点击后触发事件，比如去下载一个文件或者做一些操作，这些操作会耗时，如果不能及时结束，主线程将会阻塞，这样界面就会出现未响应的状态，因此必须使用多线程来解决这个问题。<br>注意：</p>
+<ol>
+<li>PyQt5不能在子线程中刷新线程，这样会造成界面卡死，因此不能使用常规的多线程刷新UI。 </li>
+<li>但是又必须要实现子线程和主线程之间的通信，否则无法得知任务是否完成。因此使用PyQt5中的QThread，这样既可以使用信号机制，又能够使用多线程。 </li>
+<li>当启动多线程后，注册信号，槽函数为主线程中的函数，当任务完成后，发射信号，在主线程中对UI进行更新。</li>
+</ol>
+<p>注：由于需要注册信号，thread需要是继承自QThread的类<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Example</span><span class="params">(QThread)</span>:</span></span><br><span class="line">    signal = pyqtSignal()    <span class="comment"># 括号里填写信号传递的参数</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        super().__init__()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__del__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.wait()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="comment"># 进行任务操作</span></span><br><span class="line">        self.signal.emit()    <span class="comment"># 发射信号</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># UI类中</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">buttonClick</span><span class="params">(self)</span></span></span><br><span class="line">    self.thread = Example()</span><br><span class="line">    self.thread.signal.connect(self.callback)</span><br><span class="line">    self.thread.start()    <span class="comment"># 启动线程</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">callbakc</span><span class="params">(self)</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line">--------------------- </span><br><span class="line">作者：新安浅滩 </span><br><span class="line">来源：CSDN </span><br><span class="line">原文：https://blog.csdn.net/hu694028833/article/details/<span class="number">80977302</span> </span><br><span class="line">版权声明：本文为博主原创文章，转载请附上博文链接！</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/08/正则表达式整理/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/08/正则表达式整理/" itemprop="url">正则表达式整理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-08T00:00:00+08:00">
+                2018-04-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/04/08/正则表达式整理/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2018/04/08/正则表达式整理/" class="cy_cmt_count" data-xid="2018/04/08/正则表达式整理/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="1-常用正则表达式"><a href="#1-常用正则表达式" class="headerlink" title="1. 常用正则表达式"></a>1. 常用正则表达式</h2><table>
+<thead>
+<tr>
+<th>表达式</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\r, \n</td>
+<td>代表回车和换行符</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>制表符</td>
+</tr>
+<tr>
+<td>\</td>
+<td>代表 “\” 本身</td>
+</tr>
+<tr>
+<td>\^</td>
+<td>匹配 ^ 符号本身</td>
+</tr>
+<tr>
+<td>$</td>
+<td>匹配 $ 符号本身</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>元字符</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.</td>
+<td>匹配除了换行符以外的任意字符</td>
+</tr>
+<tr>
+<td>\w</td>
+<td>匹配字母、数字、下划线、汉字</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>匹配任意的空白符</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>单词的开始或结尾</td>
+</tr>
+<tr>
+<td>~</td>
+<td>匹配字符串的开始</td>
+</tr>
+<tr>
+<td>$</td>
+<td>匹配字符串的结束</td>
+</tr>
+</tbody>
+</table>
+<p>如：<br>\ba\w\b ：匹配以字母a开头的单词——先是某个单词开始处(\b)，然后是字母a,然后是任意数量的字母或数字(\w)，最后是单词结束处(\b)。</p>
+<p>\d+ ：匹配1个或更多连续的数字。这里的+是和类似的元字符，不同的是匹配重复任意次(可能是0次)，而+则匹配重复1次或更多次。</p>
+<p>\b\w{6}\b： 匹配刚好6个字符的单词。</p>
+<table>
+<thead>
+<tr>
+<th>表达式</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[ ]</td>
+<td>包含一系列字符</td>
+</tr>
+<tr>
+<td>[^ ]</td>
+<td>包含之外一系列字符</td>
+</tr>
+</tbody>
+</table>
+<p>[ab5@]匹配a” 或 “b” 或 “5” 或 “@</p>
+<p>[^abc]： 包含abc之外的任意字符</p>
+<p>[f-k]f-k之间的任意字符<br>| 表达式 | 说明 |<br>| — | — |<br>| {n} | 表达式重复n次，比如：<a href="http://www.regexlab.com/zh/workshop.asp?pat=/w%7B2%7D&amp;txt=ab+c6" target="_blank" rel="noopener">“\w{2}” 相当于 “\w\w”</a>；<a href="http://www.regexlab.com/zh/workshop.asp?pat=a%7B5%7D&amp;txt=bbaaaaaddee" target="_blank" rel="noopener">“a{5}” 相当于 “aaaaa”</a> |<br>| {m,n} | 表达式至少重复m次，最多重复n次，比如：<a href="http://www.regexlab.com/zh/workshop.asp?pat=ba%7B1,3%7D&amp;txt=a,baaa,baa,b,ba" target="_blank" rel="noopener">“ba{1,3}”可以匹配 “ba”或”baa”或”baaa</a> |<br>| {m,} | 表达式至少重复m次，比如：<a href="http://www.regexlab.com/zh/workshop.asp?pat=/w/d%7B2,%7D&amp;txt=b1,a12,_456,_4AA,M12344,12346546547446534543543" target="_blank" rel="noopener">“\w\d{2,}”可以匹配 “a12”,”_456”,”M12344”…</a> |<br>| ? | 匹配表达式0次或者1次，相当于 {0,1}，比如：<a href="http://www.regexlab.com/zh/workshop.asp?pat=a%5Bcd%5D%3F&amp;txt=a,c,d,ac,ad" target="_blank" rel="noopener">“a[cd]?”可以匹配 “a”,”ac”,”ad”</a> |<br>| + | 表达式至少出现1次，相当于 {1,}，比如：<a href="http://www.regexlab.com/zh/workshop.asp?pat=a%2Bb&amp;txt=a%2Cb%2Cab%2Caab%2Caaab" target="_blank" rel="noopener">“a+b”可以匹配 “ab”,”aab”,”aaab”…</a> |<br>| <em> | 表达式不出现或出现任意次，相当于 {0,}，比如：[“\^</em>b”可以匹配 “b”,”^^^b”…](<a href="http://www.regexlab.com/zh/workshop.asp?pat=%5C%5E*b&amp;txt=%5E%2Cb%2C%5E%5E%5Eb%2C%5E%5E%5E%5E%5E%5E%5Eb" target="_blank" rel="noopener">http://www.regexlab.com/zh/workshop.asp?pat=%5C%5E*b&amp;txt=%5E%2Cb%2C%5E%5E%5Eb%2C%5E%5E%5E%5E%5E%5E%5Eb</a>) |</p>
+<h2 id="2-Qt-中使用正则表达式"><a href="#2-Qt-中使用正则表达式" class="headerlink" title="2.Qt 中使用正则表达式"></a>2.Qt 中使用正则表达式</h2><p>​ Qt 用QRegExp 来封装正则表达式。如： QRegExp rx(“^[0-9]+(.\d+)?$”);</p>
+<p>例如我们又这个一个有规则的字符串：价格:数量:商家编码:属性名:属性值;属性名:属性值; 价格:数量:商家编码:属性名:属性值;属性名:属性值;属性名:属性值; 价格:数量:商家编码:属性名:属性值;</p>
+<p>想要分成：</p>
+<p>价格:数量:商家编码:属性名:属性值;属性名:属性值;<br>价格:数量:商家编码:属性名:属性值;属性名:属性值;属性名:属性值;<br>价格:数量:商家编码:属性名:属性值;</p>
+<p>首先选择合适的正则表达式：(\w:){3}(\w:\w*;)+， 然后：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">QRegExp <span class="title">rx</span><span class="params">(tr(<span class="string">"(\w:)&#123;3&#125;(\w:\w*;)+"</span>))</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">pos</span><span class="params">(<span class="number">0</span>)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> ((pos = rx.indexIn(str, pos)) != <span class="number">-1</span>)</span><br><span class="line">&#123;</span><br><span class="line">strList.push_back(rx.capturedTexts().at(<span class="number">0</span>));</span><br><span class="line">pos += rx.matchedLength();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这里 strList 就是想要的结果了。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/06/Sqlalchemy automap Demo/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/06/Sqlalchemy automap Demo/" itemprop="url">Sqlalchemy automap Demo</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-06T00:00:00+08:00">
+                2018-03-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/03/06/Sqlalchemy automap Demo/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2018/03/06/Sqlalchemy automap Demo/" class="cy_cmt_count" data-xid="2018/03/06/Sqlalchemy automap Demo/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sqlalchemy <span class="keyword">import</span> create_engine, Table, Column, Integer, String, MetaData, ForeignKey</span><br><span class="line"><span class="keyword">from</span> sqlalchemy.orm <span class="keyword">import</span> Session</span><br><span class="line"><span class="keyword">from</span> sqlalchemy.ext.automap <span class="keyword">import</span> automap_base</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    engine_str = <span class="string">"mysql+pymysql://user:password@host:port/employees?charset=utf8mb4"</span></span><br><span class="line">    engine = create_engine(engine_str, echo=<span class="keyword">True</span>)</span><br><span class="line">    session = Session(engine)</span><br><span class="line">    Base = automap_base()</span><br><span class="line">    Base.prepare(engine, reflect=<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查询测试</span></span><br><span class="line">result = session.query(Base.classes.user).all()</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> result:</span><br><span class="line">    print(i.id)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># orm 映射</span></span><br><span class="line">User = Base.classes.user</span><br><span class="line">Customers = Base.classes.Customers</span><br><span class="line">Orders = Base.classes.Orders</span><br><span class="line"> </span><br><span class="line">result = session.query(Customers, Orders).filter_by(cust_id=<span class="number">1000000001</span>).first()</span><br><span class="line"><span class="comment"># print(result)</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> result:</span><br><span class="line">    <span class="keyword">if</span> isinstance(i, Customers):</span><br><span class="line">        print(i.cust_name)</span><br><span class="line">    <span class="keyword">if</span> isinstance(i, Orders):</span><br><span class="line">        print(i.order_date)</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/03/Python 线程池 进程池 内存管理/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/03/Python 线程池 进程池 内存管理/" itemprop="url">Python 线程池/进程池 内存管理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-03T00:00:00+08:00">
+                2018-03-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/03/03/Python 线程池 进程池 内存管理/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2018/03/03/Python 线程池 进程池 内存管理/" class="cy_cmt_count" data-xid="2018/03/03/Python 线程池 进程池 内存管理/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="concurrent-futures-线程池-进程池内存管理"><a href="#concurrent-futures-线程池-进程池内存管理" class="headerlink" title="concurrent.futures 线程池/进程池内存管理"></a>concurrent.futures 线程池/进程池内存管理</h1><h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>之前进行爬虫任务的时候遇到了这么一个需求，1G 内存的机器跑爬虫，爬取一个网站的数据，之前使用的是这样一种方式：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"> futures = list()</span><br><span class="line"> <span class="keyword">with</span> ThreadPool(max_workers=<span class="number">20</span>) <span class="keyword">as</span> exc:</span><br><span class="line">      <span class="keyword">for</span> tr <span class="keyword">in</span> table.select(<span class="string">"tr"</span>):</span><br><span class="line"></span><br><span class="line">          <span class="comment"># 取线程执行结果</span></span><br><span class="line">          future = exc.submit(self.get_asn, tr.strings)</span><br><span class="line">          futures.append(future)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 as_completed 异步方式处理完成任务的线程</span></span><br><span class="line"><span class="keyword">for</span> future <span class="keyword">in</span> as_completed(futures):</span><br><span class="line">    result = future.result()</span><br><span class="line">    <span class="comment"># 拼接 asn.json 的 path</span></span><br><span class="line">    file_path = result[<span class="string">"asn"</span>] + <span class="string">".json"</span></span><br><span class="line">    asn_file = os.path.join(self.base_data_path, file_path)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> open(asn_file, <span class="string">"w"</span>, encoding=<span class="string">"utf8"</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(json.dumps(result))</span><br></pre></td></tr></table></figure></p>
+<p>使用了 concurrent.futures 的 ThreadPoolExecutor submit 方法，因为开启了20个线程同时爬取，连接网站的速度还很快，任务很快就被处理完成了，可以看到我时完成一个任务的时候就进行写文件了操作，但是2分钟后很快程序就终止了，监控程序发现时由于程序内存占用达到 80% 被系统 Kill 掉了。</p>
+<ul>
+<li>为什么内存会爆呢？监控内存显示，程序处理完任务之后，内存并没有被立刻释放，而是有很长时间延迟之后才被释放（ 在此吐槽 python GC）</li>
+</ul>
+<h2 id="改进方法："><a href="#改进方法：" class="headerlink" title="改进方法："></a>改进方法：</h2><blockquote>
+<p>参考 <a href="https://stackoverflow.com/questions/34770169/using-concurrent-futures-without-running-out-of-ram" target="_blank" rel="noopener">https://stackoverflow.com/questions/34770169/using-concurrent-futures-without-running-out-of-ram</a><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 允许同时进行的工作数</span></span><br><span class="line">MAX_JOBS_IN_QUEUE = <span class="number">1000</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">tr_list = table.select(<span class="string">"tr"</span>)</span><br><span class="line">tr_left = len(tr_list) - <span class="number">1</span>  <span class="comment"># &lt;----</span></span><br><span class="line">tr_iter = iter(tr_list)  <span class="comment"># &lt;------</span></span><br><span class="line">jobs = dict()</span><br><span class="line"></span><br><span class="line">  <span class="keyword">with</span> ThreadPool(max_workers=<span class="number">20</span>) <span class="keyword">as</span> exc:</span><br><span class="line">      <span class="keyword">while</span> tr_left:</span><br><span class="line">          print(<span class="string">"#"</span> * <span class="number">100</span>, <span class="string">"TASK: &#123;&#125; &lt;===&gt;  JOB: &#123;&#125;"</span>.format(tr_left, len(jobs)))</span><br><span class="line">          <span class="keyword">for</span> tr <span class="keyword">in</span> tr_iter:</span><br><span class="line">              <span class="comment"># 取线程执行结果</span></span><br><span class="line">              job = exc.submit(self.get_asn, tr.strings)</span><br><span class="line">              jobs[job] = tr</span><br><span class="line">              <span class="keyword">if</span> len(jobs) &gt; MAX_JOBS_IN_QUEUE:</span><br><span class="line">                  <span class="keyword">break</span>  <span class="comment"># limit the job submission for now job</span></span><br><span class="line"></span><br><span class="line">          <span class="comment"># 使用 as_completed 异步方式处理任务线程</span></span><br><span class="line">          <span class="keyword">for</span> job <span class="keyword">in</span> as_completed(jobs):</span><br><span class="line">              tr_left -= <span class="number">1</span>  <span class="comment"># one down - many to go...   &lt;---</span></span><br><span class="line">              result = job.result()</span><br><span class="line">              <span class="comment"># 从字典中删除结果，因为我们不需要存储它</span></span><br><span class="line">              <span class="keyword">del</span> jobs[job]</span><br><span class="line"></span><br><span class="line">              <span class="comment"># 拼接 asn.json 的 path</span></span><br><span class="line">              file_path = result[<span class="string">"asn"</span>] + <span class="string">".json"</span></span><br><span class="line">              asn_file = os.path.join(self.base_data_path, file_path)</span><br><span class="line"></span><br><span class="line">              <span class="keyword">with</span> open(asn_file, <span class="string">"w"</span>, encoding=<span class="string">"utf8"</span>) <span class="keyword">as</span> f:</span><br><span class="line">                  f.write(json.dumps(result))</span><br><span class="line">              <span class="keyword">break</span></span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>改进后内存在切换 html 爬取的时候，会偶尔会升高一下，最高 65%，平均在 35% 左右。</p>
+<ul>
+<li>ProcessPoolExecutor 进程同理</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/27/SQLAlchemy 插入 性能 速度 比较/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/27/SQLAlchemy 插入 性能 速度 比较/" itemprop="url">SQLAlchemy 插入 性能 速度 比较</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-27T00:00:00+08:00">
+                2018-01-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/01/27/SQLAlchemy 插入 性能 速度 比较/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2018/01/27/SQLAlchemy 插入 性能 速度 比较/" class="cy_cmt_count" data-xid="2018/01/27/SQLAlchemy 插入 性能 速度 比较/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> sqlite3</span><br><span class="line"> </span><br><span class="line"><span class="keyword">from</span> sqlalchemy.ext.declarative <span class="keyword">import</span> declarative_base</span><br><span class="line"><span class="keyword">from</span> sqlalchemy <span class="keyword">import</span> Column, Integer, String,  create_engine</span><br><span class="line"><span class="keyword">from</span> sqlalchemy.orm <span class="keyword">import</span> scoped_session, sessionmaker</span><br><span class="line"> </span><br><span class="line">Base = declarative_base()</span><br><span class="line">DBSession = scoped_session(sessionmaker())</span><br><span class="line">engine = <span class="keyword">None</span></span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Customer</span><span class="params">(Base)</span>:</span></span><br><span class="line">    __tablename__ = <span class="string">"customer"</span></span><br><span class="line">    id = Column(Integer, primary_key=<span class="keyword">True</span>)</span><br><span class="line">    name = Column(String(<span class="number">255</span>))</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">init_sqlalchemy</span><span class="params">(dbname=<span class="string">'sqlite:///sqlalchemy.db'</span>)</span>:</span></span><br><span class="line">    <span class="keyword">global</span> engine</span><br><span class="line">    engine = create_engine(dbname, echo=<span class="keyword">False</span>)</span><br><span class="line">    DBSession.remove()</span><br><span class="line">    DBSession.configure(bind=engine, autoflush=<span class="keyword">False</span>, expire_on_commit=<span class="keyword">False</span>)</span><br><span class="line">    Base.metadata.drop_all(engine)</span><br><span class="line">    Base.metadata.create_all(engine)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_sqlalchemy_orm</span><span class="params">(n=<span class="number">100000</span>)</span>:</span></span><br><span class="line">    init_sqlalchemy()</span><br><span class="line">    t0 = time.time()</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> xrange(n):</span><br><span class="line">        customer = Customer()</span><br><span class="line">        customer.name = <span class="string">'NAME '</span> + str(i)</span><br><span class="line">        DBSession.add(customer)</span><br><span class="line">        <span class="keyword">if</span> i % <span class="number">1000</span> == <span class="number">0</span>:</span><br><span class="line">            DBSession.flush()</span><br><span class="line">    DBSession.commit()</span><br><span class="line">    print(</span><br><span class="line">        <span class="string">"SQLAlchemy ORM: Total time for "</span> + str(n) +</span><br><span class="line">        <span class="string">" records "</span> + str(time.time() - t0) + <span class="string">" secs"</span>)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_sqlalchemy_orm_pk_given</span><span class="params">(n=<span class="number">100000</span>)</span>:</span></span><br><span class="line">    init_sqlalchemy()</span><br><span class="line">    t0 = time.time()</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> xrange(n):</span><br><span class="line">        customer = Customer(id=i+<span class="number">1</span>, name=<span class="string">"NAME "</span> + str(i))</span><br><span class="line">        DBSession.add(customer)</span><br><span class="line">        <span class="keyword">if</span> i % <span class="number">1000</span> == <span class="number">0</span>:</span><br><span class="line">            DBSession.flush()</span><br><span class="line">    DBSession.commit()</span><br><span class="line">    print(</span><br><span class="line">        <span class="string">"SQLAlchemy ORM pk given: Total time for "</span> + str(n) +</span><br><span class="line">        <span class="string">" records "</span> + str(time.time() - t0) + <span class="string">" secs"</span>)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_sqlalchemy_orm_bulk_save_objects</span><span class="params">(n=<span class="number">100000</span>)</span>:</span></span><br><span class="line">    init_sqlalchemy()</span><br><span class="line">    t0 = time.time()</span><br><span class="line">    n1 = n</span><br><span class="line">    <span class="keyword">while</span> n1 &gt; <span class="number">0</span>:</span><br><span class="line">        n1 = n1 - <span class="number">10000</span></span><br><span class="line">        DBSession.bulk_save_objects(</span><br><span class="line">            [</span><br><span class="line">                Customer(name=<span class="string">"NAME "</span> + str(i))</span><br><span class="line">                <span class="keyword">for</span> i <span class="keyword">in</span> xrange(min(<span class="number">10000</span>, n1))</span><br><span class="line">            ]</span><br><span class="line">        )</span><br><span class="line">    DBSession.commit()</span><br><span class="line">    print(</span><br><span class="line">        <span class="string">"SQLAlchemy ORM bulk_save_objects(): Total time for "</span> + str(n) +</span><br><span class="line">        <span class="string">" records "</span> + str(time.time() - t0) + <span class="string">" secs"</span>)</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_sqlalchemy_orm_bulk_insert</span><span class="params">(n=<span class="number">100000</span>)</span>:</span></span><br><span class="line">    init_sqlalchemy()</span><br><span class="line">    t0 = time.time()</span><br><span class="line">    n1 = n</span><br><span class="line">    <span class="keyword">while</span> n1 &gt; <span class="number">0</span>:</span><br><span class="line">        n1 = n1 - <span class="number">10000</span></span><br><span class="line">        DBSession.bulk_insert_mappings(</span><br><span class="line">            Customer,</span><br><span class="line">            [</span><br><span class="line">                dict(name=<span class="string">"NAME "</span> + str(i))</span><br><span class="line">                <span class="keyword">for</span> i <span class="keyword">in</span> xrange(min(<span class="number">10000</span>, n1))</span><br><span class="line">            ]</span><br><span class="line">        )</span><br><span class="line">    DBSession.commit()</span><br><span class="line">    print(</span><br><span class="line">        <span class="string">"SQLAlchemy ORM bulk_insert_mappings(): Total time for "</span> + str(n) +</span><br><span class="line">        <span class="string">" records "</span> + str(time.time() - t0) + <span class="string">" secs"</span>)</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_sqlalchemy_core</span><span class="params">(n=<span class="number">100000</span>)</span>:</span></span><br><span class="line">    init_sqlalchemy()</span><br><span class="line">    t0 = time.time()</span><br><span class="line">    engine.execute(</span><br><span class="line">        Customer.__table__.insert(),</span><br><span class="line">        [&#123;<span class="string">"name"</span>: <span class="string">'NAME '</span> + str(i)&#125; <span class="keyword">for</span> i <span class="keyword">in</span> xrange(n)]</span><br><span class="line">    )</span><br><span class="line">    print(</span><br><span class="line">        <span class="string">"SQLAlchemy Core: Total time for "</span> + str(n) +</span><br><span class="line">        <span class="string">" records "</span> + str(time.time() - t0) + <span class="string">" secs"</span>)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">init_sqlite3</span><span class="params">(dbname)</span>:</span></span><br><span class="line">    conn = sqlite3.connect(dbname)</span><br><span class="line">    c = conn.cursor()</span><br><span class="line">    c.execute(<span class="string">"DROP TABLE IF EXISTS customer"</span>)</span><br><span class="line">    c.execute(</span><br><span class="line">        <span class="string">"CREATE TABLE customer (id INTEGER NOT NULL, "</span></span><br><span class="line">        <span class="string">"name VARCHAR(255), PRIMARY KEY(id))"</span>)</span><br><span class="line">    conn.commit()</span><br><span class="line">    <span class="keyword">return</span> conn</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_sqlite3</span><span class="params">(n=<span class="number">100000</span>, dbname=<span class="string">'sqlite3.db'</span>)</span>:</span></span><br><span class="line">    conn = init_sqlite3(dbname)</span><br><span class="line">    c = conn.cursor()</span><br><span class="line">    t0 = time.time()</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> xrange(n):</span><br><span class="line">        row = (<span class="string">'NAME '</span> + str(i),)</span><br><span class="line">        c.execute(<span class="string">"INSERT INTO customer (name) VALUES (?)"</span>, row)</span><br><span class="line">    conn.commit()</span><br><span class="line">    print(</span><br><span class="line">        <span class="string">"sqlite3: Total time for "</span> + str(n) +</span><br><span class="line">        <span class="string">" records "</span> + str(time.time() - t0) + <span class="string">" sec"</span>)</span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    test_sqlalchemy_orm(<span class="number">100000</span>)</span><br><span class="line">    test_sqlalchemy_orm_pk_given(<span class="number">100000</span>)</span><br><span class="line">    test_sqlalchemy_orm_bulk_save_objects(<span class="number">100000</span>)</span><br><span class="line">    test_sqlalchemy_orm_bulk_insert(<span class="number">100000</span>)</span><br><span class="line">    test_sqlalchemy_core(<span class="number">100000</span>)</span><br><span class="line">    test_sqlite3(<span class="number">100000</span>)</span><br></pre></td></tr></table></figure>
+<p>上面代码分别使用了orm， orm带主键，orm的bulk_save_objects, orm的bulk_insert_mappings, 非orm形式，原生的dbapi方式；插入10000条记录的结果如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">SQLAlchemy ORM: Total time <span class="keyword">for</span> <span class="number">100000</span> records <span class="number">7.2070479393</span> secs</span><br><span class="line">SQLAlchemy ORM pk given: Total time <span class="keyword">for</span> <span class="number">100000</span> records <span class="number">4.28471207619</span> secs</span><br><span class="line">SQLAlchemy ORM bulk_save_objects(): Total time <span class="keyword">for</span> <span class="number">100000</span> records <span class="number">1.58296084404</span> secs</span><br><span class="line">SQLAlchemy ORM bulk_insert_mappings(): Total time <span class="keyword">for</span> <span class="number">100000</span> records <span class="number">0.453973054886</span> secs</span><br><span class="line">SQLAlchemy Core: Total time <span class="keyword">for</span> <span class="number">100000</span> records <span class="number">0.210998058319</span> secs</span><br><span class="line">sqlite3: Total time <span class="keyword">for</span> <span class="number">100000</span> records <span class="number">0.136252880096</span> sec</span><br></pre></td></tr></table></figure>
+<p>注意：</p>
+<p>这里只有第一、二种方式可以拿到插入记录的id，其它都不能直接拿到，需要自己再查询一次。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/26/SQLAlchemy 几种查询方式总结/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/26/SQLAlchemy 几种查询方式总结/" itemprop="url">SQLAlchemy 几种查询方式总结</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-26T00:00:00+08:00">
+                2018-01-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/01/26/SQLAlchemy 几种查询方式总结/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2018/01/26/SQLAlchemy 几种查询方式总结/" class="cy_cmt_count" data-xid="2018/01/26/SQLAlchemy 几种查询方式总结/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>几种常见sqlalchemy查询：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#简单查询</span></span><br><span class="line">    print(session.query(User).all())</span><br><span class="line">    print(session.query(User.name, User.fullname).all())</span><br><span class="line">    print(session.query(User, User.name).all())</span><br><span class="line">    </span><br><span class="line">    <span class="comment">#带条件查询</span></span><br><span class="line">    print(session.query(User).filter_by(name=<span class="string">'user1'</span>).all())</span><br><span class="line">    print(session.query(User).filter(User.name == <span class="string">"user"</span>).all())</span><br><span class="line">    print(session.query(User).filter(User.name.like(<span class="string">"user%"</span>)).all())</span><br><span class="line">    </span><br><span class="line">    <span class="comment">#多条件查询</span></span><br><span class="line">    print(session.query(User).filter(and_(User.name.like(<span class="string">"user%"</span>), User.fullname.like(<span class="string">"first%"</span>))).all())</span><br><span class="line">    print(session.query(User).filter(or_(User.name.like(<span class="string">"user%"</span>), User.password != <span class="keyword">None</span>)).all())</span><br><span class="line">    </span><br><span class="line">    <span class="comment">#sql过滤</span></span><br><span class="line">    print(session.query(User).filter(<span class="string">"id&gt;:id"</span>).params(id=<span class="number">1</span>).all())</span><br><span class="line">    </span><br><span class="line">    <span class="comment">#关联查询 </span></span><br><span class="line">    print(session.query(User, Address).filter(User.id == Address.user_id).all())</span><br><span class="line">    print(session.query(User).join(User.addresses).all())</span><br><span class="line">    print(session.query(User).outerjoin(User.addresses).all())</span><br><span class="line">    </span><br><span class="line">    <span class="comment">#聚合查询</span></span><br><span class="line">    print(session.query(User.name, func.count(<span class="string">'*'</span>).label(<span class="string">"user_count"</span>)).group_by(User.name).all())</span><br><span class="line">    print(session.query(User.name, func.sum(User.id).label(<span class="string">"user_id_sum"</span>)).group_by(User.name).all())</span><br><span class="line">    </span><br><span class="line">    <span class="comment">#子查询</span></span><br><span class="line">    stmt = session.query(Address.user_id, func.count(<span class="string">'*'</span>).label(<span class="string">"address_count"</span>)).group_by(Address.user_id).subquery()</span><br><span class="line">    print(session.query(User, stmt.c.address_count).outerjoin((stmt, User.id == stmt.c.user_id)).order_by(User.id).all())</span><br><span class="line">    </span><br><span class="line">    <span class="comment">#exists</span></span><br><span class="line">    print(session.query(User).filter(exists().where(Address.user_id == User.id)))</span><br><span class="line">    print(session.query(User).filter(User.addresses.any()))</span><br></pre></td></tr></table></figure></p>
+<p>限制返回字段查询<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sqlalchemy <span class="keyword">import</span> func</span><br><span class="line"> </span><br><span class="line"><span class="comment"># count User records, without</span></span><br><span class="line"><span class="comment"># using a subquery.</span></span><br><span class="line">session.query(func.count(User.id))</span><br><span class="line"> </span><br><span class="line"><span class="comment"># return count of user "id" grouped</span></span><br><span class="line"><span class="comment"># by "name"</span></span><br><span class="line">session.query(func.count(User.id)).\</span><br><span class="line">        group_by(User.name)</span><br><span class="line"> </span><br><span class="line"><span class="keyword">from</span> sqlalchemy <span class="keyword">import</span> distinct</span><br><span class="line"> </span><br><span class="line"><span class="comment"># count distinct "name" values</span></span><br><span class="line">session.query(func.count(distinct(User.name)))</span><br></pre></td></tr></table></figure></p>
+<p>记录总数查询：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sqlalchemy <span class="keyword">import</span> func</span><br><span class="line"> </span><br><span class="line"><span class="comment"># count User records, without</span></span><br><span class="line"><span class="comment"># using a subquery.</span></span><br><span class="line">session.query(func.count(User.id))</span><br><span class="line"> </span><br><span class="line"><span class="comment"># return count of user "id" grouped</span></span><br><span class="line"><span class="comment"># by "name"</span></span><br><span class="line">session.query(func.count(User.id)).\</span><br><span class="line">        group_by(User.name)</span><br><span class="line"> </span><br><span class="line"><span class="keyword">from</span> sqlalchemy <span class="keyword">import</span> distinct</span><br><span class="line"> </span><br><span class="line"><span class="comment"># count distinct "name" values</span></span><br><span class="line">session.query(func.count(distinct(User.name)))</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/03/python 3种 多线程方法/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="vae的节奏">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="vae的记事本">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/03/python 3种 多线程方法/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-03T00:00:00+08:00">
+                2018-01-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2018/01/03/python 3种 多线程方法/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http://yoursite.com/2018/01/03/python 3种 多线程方法/" class="cy_cmt_count" data-xid="2018/01/03/python 3种 多线程方法/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </span></div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>第一种 threading.Thread<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> threading</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> queue</span><br><span class="line"> </span><br><span class="line">course_url = <span class="string">'xxxxxxxxxxx'</span></span><br><span class="line"> </span><br><span class="line">pattern = re.compile(<span class="string">r'&lt;a href="(/zuofa/\d+?)" title="(.*?)" class="shipu"&gt;'</span>)</span><br><span class="line"> </span><br><span class="line">headers = &#123;</span><br><span class="line">    <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36'</span>&#125;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="comment"># 创建线程类，继承Thread类</span></span><br><span class="line"><span class="comment"># class MyThread(threading.Thread):</span></span><br><span class="line"><span class="comment">#     def __init__(self, func, args):</span></span><br><span class="line"><span class="comment">#         super(MyThread, self).__init__()</span></span><br><span class="line"><span class="comment">#         self.func = func</span></span><br><span class="line"><span class="comment">#         self.args = args</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment">#     def run(self):</span></span><br><span class="line"><span class="comment">#         self.func(*self.args)</span></span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">extra_links</span><span class="params">(q, f)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    用于多线程采集</span></span><br><span class="line"><span class="string">    :param q: url 队列</span></span><br><span class="line"><span class="string">    :param f: 写入的目标文件</span></span><br><span class="line"><span class="string">    :return: </span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">not</span> q.empty():</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            url = q.get()</span><br><span class="line">            r = requests.get(url, headers=headers)</span><br><span class="line">            <span class="keyword">if</span> r.status_code == <span class="number">200</span>:</span><br><span class="line">                soup = BeautifulSoup(r.text, <span class="string">'lxml'</span>)</span><br><span class="line">                course_list = soup.find(class_=<span class="string">'main-left'</span>)</span><br><span class="line">                links = course_list.find_all(class_=<span class="string">'item-tt-link'</span>)</span><br><span class="line">                <span class="keyword">for</span> i <span class="keyword">in</span> links:</span><br><span class="line">                    href = i.attrs[<span class="string">'href'</span>]</span><br><span class="line">                    f.write(<span class="string">'http:&#123;&#125; ----&gt;&#123;&#125;\n'</span>.format(href, i.attrs[<span class="string">'title'</span>]))</span><br><span class="line">            q.task_done()</span><br><span class="line">        <span class="keyword">except</span> queue.Empty:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'course_link.txt'</span>, <span class="string">'w'</span>, encoding=<span class="string">'utf8'</span>) <span class="keyword">as</span> f:</span><br><span class="line">        q = queue.Queue()</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">101</span>):</span><br><span class="line">            q.put(<span class="string">'&#123;&#125;?page=&#123;&#125;'</span>.format(course_url, i))</span><br><span class="line">        threads = []</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">20</span>):</span><br><span class="line">            t = threading.Thread(target=extra_links, args=(q, f))</span><br><span class="line">            threads.append(t)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> threads:</span><br><span class="line">            i.start()</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> threads:</span><br><span class="line">            i.join()</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    s = time.clock()</span><br><span class="line">    main()</span><br><span class="line">    print(<span class="string">'运行时间: %.2f'</span> % (time.clock() - s))</span><br></pre></td></tr></table></figure></p>
+<p>第二种  concurrent.futures import ThreadPoolExecutor<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> concurrent.futures <span class="keyword">import</span> ThreadPoolExecutor</span><br><span class="line"><span class="keyword">from</span> requests.packages.urllib3.exceptions <span class="keyword">import</span> InsecureRequestWarning</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"> </span><br><span class="line">requests.packages.urllib3.disable_warnings(InsecureRequestWarning)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">course_url = [<span class="string">'xxxxxxxxxxx?page=&#123;&#125;'</span>.format(i) <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">101</span>)]</span><br><span class="line"> </span><br><span class="line">pattern = re.compile(<span class="string">r'&lt;a href="(/zuofa/\d+?)" title="(.*?)" class="shipu"&gt;'</span>)</span><br><span class="line"> </span><br><span class="line">headers = &#123;</span><br><span class="line">    <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36'</span>&#125;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">extra_links</span><span class="params">(url)</span>:</span></span><br><span class="line">    r = requests.get(url, headers=headers)</span><br><span class="line">    <span class="keyword">if</span> r.status_code == <span class="number">200</span>:</span><br><span class="line">        soup = BeautifulSoup(r.text, <span class="string">'lxml'</span>)</span><br><span class="line">        course_list = soup.find(class_=<span class="string">'main-left'</span>)</span><br><span class="line">        links = course_list.find_all(class_=<span class="string">'item-tt-link'</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> links:</span><br><span class="line">            href = i.attrs[<span class="string">'href'</span>]</span><br><span class="line">            f.write(<span class="string">'http:&#123;&#125; ----&gt;&#123;&#125;\n'</span>.format(href, i.attrs[<span class="string">'title'</span>]))</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    s = time.clock()</span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'course_link.txt'</span>, <span class="string">'w'</span>, encoding=<span class="string">'utf8'</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">with</span> ThreadPoolExecutor(max_workers=<span class="number">20</span>) <span class="keyword">as</span> executor:</span><br><span class="line">            executor.map(extra_links, course_url)</span><br><span class="line">    print(<span class="string">'运行用时: %.2f 秒'</span> % (time.clock() - s))</span><br></pre></td></tr></table></figure></p>
+<p>第三种  from multiprocessing.dummy import Pool as ThreadPool<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> multiprocessing.dummy <span class="keyword">import</span> Pool <span class="keyword">as</span> ThreadPool</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> requests.packages.urllib3.exceptions <span class="keyword">import</span> InsecureRequestWarning</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"> </span><br><span class="line">requests.packages.urllib3.disable_warnings(InsecureRequestWarning)</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">course_url = [<span class="string">'xxxxxxxxxxxx?page=&#123;&#125;'</span>.format(i) <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">101</span>)]</span><br><span class="line"> </span><br><span class="line">pattern = re.compile(<span class="string">r'&lt;a href="(/zuofa/\d+?)" title="(.*?)" class="shipu"&gt;'</span>)</span><br><span class="line"> </span><br><span class="line">headers = &#123;</span><br><span class="line">    <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36'</span>&#125;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">extra_links</span><span class="params">(url)</span>:</span></span><br><span class="line">    r = requests.get(url, headers=headers)</span><br><span class="line">    <span class="keyword">if</span> r.status_code == <span class="number">200</span>:</span><br><span class="line">        soup = BeautifulSoup(r.text, <span class="string">'lxml'</span>)</span><br><span class="line">        course_list = soup.find(class_=<span class="string">'main-left'</span>)</span><br><span class="line">        links = course_list.find_all(class_=<span class="string">'item-tt-link'</span>)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> links:</span><br><span class="line">            href = i.attrs[<span class="string">'href'</span>]</span><br><span class="line">            f.write(<span class="string">'http:&#123;&#125; ----&gt;&#123;&#125;\n'</span>.format(href, i.attrs[<span class="string">'title'</span>]))</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    s = time.clock()</span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'course_link.txt'</span>, <span class="string">'w'</span>, encoding=<span class="string">'utf8'</span>) <span class="keyword">as</span> f:</span><br><span class="line">        pool = ThreadPool(<span class="number">20</span>)</span><br><span class="line">        pool.map(extra_links, course_url)</span><br><span class="line">        pool.close()</span><br><span class="line">        pool.join()</span><br><span class="line">    print(<span class="string">'运行用时: %.2f 秒'</span> % (time.clock() - s))</span><br></pre></td></tr></table></figure></p>
+<p>速度可自行测试  后两种相对简单</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="vae的节奏">
+          <p class="site-author-name" itemprop="name">vae的节奏</p>
+           
+              <p class="site-description motion-element" itemprop="description">vae的个人博客</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">36</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/vae-0118" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="mailto:149759490@qq.com" target="_blank" title="E-Mail">
+                  
+                    <i class="fa fa-fw fa-envelope"></i>
+                  
+                    
+                      E-Mail
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/vae_0118" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                    
+                      Twitter
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.weibo.com/liuvae" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                    
+                      Weibo
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.douban.com/people/49980143/" target="_blank" title="DouBan">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      DouBan
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/liu-vae/" target="_blank" title="ZhiHu">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      ZhiHu
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">vae的节奏</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+<br><a href="http://www.miitbeian.gov.cn/">鄂ICP备18021832号</a> 
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+    <script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cytTcHj25"></script>
+  
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
